@@ -1,0 +1,72 @@
+Problem Description
+
+A class called MyPrintCard which represents a prepaid card that can be used at all Print & Copy Center on the campus is described below.
+
+Private instance variables named balance that represents the amount of money in the card.
+Constructor method MyPrintCard() that initialized the balance to RM10.00.
+There is no setter method for the class
+Getter method getBalance() that returns the current balance.
+topupCard(double amt): top up the card, add amt to balance.
+payService(double amt): boolean that pays the "print and copy" services and updates the balance. Payments are only valid if the balance after payment is not less than RM5.00, otherwise, it returns false.
+toString() that returns the current balance statement.
+ 
+
+The UML Class Diagram for class MyPrintCard is as the following.
+
+MyPrintCard
+-balance: double
+
++MyPrintCard()
+
++getBalance(): double
+
++topupCard(double amt): void
+
++payService(double amt):  boolean
+
++toString()
+
+ 
+
+Write the code for MyPrintCard class and a test program named MyPrintCardaApp that reads the input and prints the output as described below.
+
+Input
+
+The input consists of a few test cases. For each test case, the first line of input is a positive integer N (N ≤ 50) which indicates the number of transactions for the card. Each of the following N lines represents a transaction. It starts with character "+", "-" or "=" which indicates top up the card, pay the service or print the balance. Input is terminated by a test case where N is 0.
+
+ 
+
+Output
+
+For each test case, output a line in the format "Case #x:" where x is the case number (starting from 1), followed by the balance for each valid transaction, otherwise, print "invalid".
+
+ 
+
+Sample Input Output
+
+Sample Input
+
+5
+=
+-0.70
+-2.40
+-1.20
++20.00
+3
+-5.00
+-0.50
+=
+0
+
+Sample Output
+
+Case #1:
+RM10.00
+RM9.30
+RM6.90
+RM5.70
+RM25.70
+Case #2:
+RM5.00
+invalid
+RM5.00
