@@ -1,0 +1,60 @@
+Problem Description
+
+A savings account enables you to save or deposit your money into an account and receive certain interest with no stated maturity. Available at all the banking institutions in Malaysia, interest earned on your balance is normally credited to your account every month. The minimum deposit to open a savings account varies from one banking institution to another and can be as low as RM1.
+
+ 
+
+A savings account class called SavingAccount is defined as follows.
+
+A private instance variable called balance represents the account balance.
+The constructor SavingAccount(double amount) sets the amount it receives as the initial value of the account balance.
+addInterest() method that adds a 3% interest to the account balance.
+getBalance() method that returns the account balance.
+ 
+
+The UML Class Diagram for class SavingAccount is as the following.
+
+SavingAccount
+balance:double
+
++SavingAccount(double amount)
+
++addInterest():void
+
++getBalance():double
+
+ 
+
+Write the code for SavingAccount class and a test program to test SavingAccount class that reads the input and prints the output as described below.
+
+Input
+
+The input consists of a few test cases. For each test case, the first line of input is a positive integer n which indicates the number of test cases. Each of the following n lines contains a decimal point number that represents the amount deposited (in Ringgit Malaysia) when opening a savings account.
+
+ 
+
+Output
+
+For each test case, output a line in the format "Case #x:" where x is the case number (starting from 1), followed by the account balance, which is a number with decimal points that represents an amount in Ringgit Malaysia.
+
+ 
+
+Sample Input Output
+
+Sample Input
+
+3
+
+1.00
+
+150.00
+
+0
+
+Sample Output
+
+Case #1: 1.03
+
+Case #2: 154.50
+
+Case #3: 0.00
