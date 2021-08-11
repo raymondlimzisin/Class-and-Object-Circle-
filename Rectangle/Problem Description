@@ -1,0 +1,67 @@
+Problem Description
+
+A class named Rectangle is defined as follows.
+
+Private instance variables named width and height that represents the width and height of the rectangle.
+The constructor Rectangle()that initialised width and height to 0.0 respectively.
+setWidth(double) method to set a new width
+setHeight(double) method to set a new height
+getWidth() method that returns the width
+getHeight() method that returns the height
+getArea() method that returns the area of the rectangle.
+getPerimeter() method to returns the perimeter of the rectangle.
+ 
+
+The UML Class Diagram for class Rectangle is as the following.
+
+Rectangle
+-width: double
+
+-height: double
+
++Rectangle()
+
++setWidth(width:double): void
+
++setHeight(height:double): void
+
++getWidth(): double
+
++getHeight(): double
+
++getArea(): double
+
++getPerimeter(): double
+
+ 
+
+Write the code for the Rectangle class and a test program named RectangleaApp that reads the input and prints the output as described below.
+
+Input
+
+The first line contains an integer n (1 ≤ n ≤ 50) which determines the number of test cases. Each of the following n lines contains two positive real numbers w and h (0.0 ≤ w, h ≤ 500.00) which represents the width and height of the rectangle.
+
+ 
+
+Output
+
+For each test case, the output contains a line in the format "Case #x: ", where x is the case number (starting from 1) follows by the width, height, area, and perimeter of the rectangle. (format the output in 2 decimal places).
+
+ 
+
+Sample Input Output
+
+Sample Input
+
+2
+
+9.0 7.33
+
+5.5 8.88
+
+Sample Output
+
+Case #1: 9.00 7.33 65.97 32.66
+
+Case #2: 5.50 8.88 48.84 28.76
+
